@@ -2,9 +2,12 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
+import { ExternalLinks } from '../Projects/ProjectsStyles';
 import { LeftSection } from './HeroStyles';
 
-const Hero = (props) => (
+const Hero = () => (
+  
+  
   <>
     <Section row nopadding>
       <LeftSection>
@@ -17,7 +20,11 @@ const Hero = (props) => (
         <SectionText>
         Welcome to my Personal Portfolio.
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Button><ExternalLinks href='https://www.linkedin.com/in/rojeet-dhakal-5430591a2/' style={{border:'none', background:'none', fontSize:'2.4rem', color:'white'}}>
+
+        Learn More
+        </ExternalLinks>
+        </Button>
       </LeftSection>
     </Section>
   </>
